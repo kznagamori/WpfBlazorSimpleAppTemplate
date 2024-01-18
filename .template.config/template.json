@@ -1,8 +1,8 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "kznanamori",
-  "classifications": [ "Common", "Code" ],
-  "identity": "kznagamori.WpfBlazorApp",
+  "classifications": [ "Common", "WPF" ],
+  "identity": "kznagamori.WpfBlazorSimpleApp",
   "name": "Wpf Blazor Simple Application",
   "shortName": "wpf-blazor-simple",
   "preferNameDirectory": true,
