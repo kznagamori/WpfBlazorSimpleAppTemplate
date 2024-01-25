@@ -9,9 +9,11 @@ namespace ___PROJECTNAME___;
 /// </summary>
 public partial class App : Application
 {
-	protected override void OnStartup(StartupEventArgs e)
-	{
-		base.OnStartup(e);
-	}
+    private void Application_Startup(object sender, StartupEventArgs e)
+    {
+    }
+    private void Application_Exit(object sender, ExitEventArgs e)
+    {
+    }
 }
 

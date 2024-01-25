@@ -8,12 +8,19 @@ namespace ___PROJECTNAME___
     /// </summary>
     public partial class App : Application
     {
-        private void Application_Startup(object sender, StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
+            base.OnStartup(e);
+            // 起動時の処理をここに記述
             AppDomain.CurrentDomain.UnhandledException += (sender, error) =>
             {
                 MessageBox.Show(error.ExceptionObject.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             };
+        }
+        protected override void OnExit(System.Windows.ExitEventArgs e)
+        {
+            // 終了時の処理をここに記述
+            base.OnExit(e);
         }
     }
 }
